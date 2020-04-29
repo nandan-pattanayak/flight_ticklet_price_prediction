@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Predicted Price</title>
+	<link rel="stylesheet" type="text/css" href="static/css/style2.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+</head>
+<body>
+	<section class="header">
+	<header class="header-menu">
+			<div class="left">
+				<h1>ML WebApp</h1>
+			</div>
+			<div class="right">
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT US</a></li>
+					<li><a href="#">OUR SERVICES</a></li>
+					<li><a href="#">CONTACTS</a></li>
+				</ul>
+			</div>
+		</header>
+		<div class="banner" style="text-align: center;background-image: url({{url_for('static', filename='images/new.jpg')}});">
+			<h1>Your Ticket Price is Here</h1>
+		</div>
+	</section>
+<div class="job-search text-center">
+	 
+   <h1>Your Ticket Price :{{prediction}} </h1>
+</select>
+</select>
+</div>
+</form>
+
+</div>
+
+<!-- our partners section -->
+<section id="recruiters">
+	<div class="container text-center">
+		<h3>AirLines</h3>
+		<div>
+			<img src="{{url_for('static', filename='images/airindia.png')}}">
+			<img src="{{url_for('static', filename='images/SpiceJet.png')}}">
+			<img src="{{url_for('static', filename='images/airasia.png')}}">
+			<img src="{{url_for('static', filename='images/goair.png')}}">
+			<img src="{{url_for('static', filename='images/vistara.png')}}">
+		</div>
+	</div>
+</section>
+
+
+
+
+
+</body>
+</html>

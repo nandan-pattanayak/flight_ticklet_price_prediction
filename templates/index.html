@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>welcome to ML WebApp</title>
+	<link rel="stylesheet" type="text/css" href="static/css/style2.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+</head>
+<body>
+	<section class="header">
+	<header class="header-menu">
+			<div class="left">
+				<h1>ML WebApp</h1>
+			</div>
+			<div class="right">
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT US</a></li>
+					<li><a href="#">OUR SERVICES</a></li>
+					<li><a href="#">CONTACTS</a></li>
+				</ul>
+			</div>
+		</header>
+		<div class="banner" style="text-align: center;background-image: url({{url_for('static', filename='images/(2).jpg')}});">
+			<h1 style="color: #fffff; text-transform: capitalize;">This Is Ml webapp which predict flight price</h1>
+			<p>Search your Destination To Predict Price</p>
+		</div>
+	</section>
+<div class="job-search text-center">
+	<form action="find" method="POST">
+	 <div class="form-row">
+
+<div class="form-group col-md-2">
+      <label for="inputState">Airline</label>
+      <select id="inputState" class="form-control" name="Airline">
+      	<option selected>0(Air Asia)</option>
+      	<option selected>1(Air India)</option>
+      	<option selected>2(GoAir)</option>
+        <option selected>3(Indigo)</option>
+        <option selected>4(Jet Airways)</option>
+        <option selected>6(Multiple carriers)</option>
+        <option selected>8(SpiceJet)</option>
+        <option selected>10(Vistara)</option>
+        <option selected>11(Vistara Premium economy)</option>
+        <option selected>12(Trujet)</option>
+        <option selected>SelectAirline</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputState">Source</label>
+      <select id="inputState" class="form-control" name="Source">
+      	
+        <option selected>0(Banglore)</option>
+        <option selected>1(Chennai)</option>
+        <option selected>2(Delhi)</option>
+        <option selected>3(Kolkata)</option>
+        <option selected>4(Mumbai)</option>
+        <option selected>SelectSource</option>
+        
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputState">Destination</label>
+      <select id="inputState" class="form-control" name="Destination">
+      	<option selected>0(Banglore)</option>
+         <option selected>1(cochin)</option>
+         <option selected>2(Hyderabad)</option>
+         <option selected>3(Chennai)</option>
+        <option selected>4(kolkata)</option>
+        <option selected>5(NewDelhi)</option>
+      	<option selected>SelectDestination</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputState">Total stops</label>
+      <select id="inputState" class="form-control" name="stops">
+      	
+        <option selected>0</option>
+        <option selected>1</option>
+        <option selected>2</option>
+        <option selected>3</option>
+        <option selected>4</option>
+        <option selected>SelectStops</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputState">Date</label>
+      <select id="inputState" class="form-control" name="date"> 
+        <option selected>1</option>
+        <option selected>2</option>
+        <option selected>3</option>
+        <option selected>4</option>
+        <option selected>5</option>
+        <option selected>6</option>
+        <option selected>7</option>
+        <option selected>8</option>
+        <option selected>9</option>
+        <option selected>10</option>
+        <option selected>11</option>
+        <option selected>12</option>
+        <option selected>13</option>
+        <option selected>14</option>
+        <option selected>15</option>
+        <option selected>16</option>
+        <option selected>17</option>
+        <option selected>18</option>
+        <option selected>19</option>
+        <option selected>20</option>
+        <option selected>21</option>
+        <option selected>22</option>
+        <option selected>23</option>
+        <option selected>24</option>
+        <option selected>25</option>
+        <option selected>26</option>
+        <option selected>27</option>
+        <option selected>28</option>
+        <option selected>29</option>
+        <option selected>30</option>
+        <option selected>SelectDate</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputState">Month</label>
+      <select id="inputState" class="form-control" name="month">
+      	 
+        <option selected>1(January)</option>
+        <option selected>2(February)</option>
+        <option selected>3(March)</option>
+        <option selected>4(April)</option>
+        <option selected>5(May)</option>
+        <option selected>6(June)</option>
+        <option selected>7(July)</option>
+        <option selected>8(August)</option>
+        <option selected>9(September)</option>
+        <option selected>10(Octobor)</option>
+        <option selected>11(November)</option>
+        <option selected>12(December)</option>
+        <option selected>SelectMonth</option>
+      </select>
+    </div>
+    <!-- <div class="form-group col-md-2"> -->
+    	 <!-- <label for="inputState">SearchHere</label> -->
+    	 <!-- <br> -->
+    	<input type="submit" class="btn btn-primary" value="FindPrice" style="margin-left: 40%;">
+    	<!-- </div> -->
+	<!-- <input type="text" class="form-control" placeholder="search-keyword"> -->
+	<!-- <input type="text" class="form-control" placeholder="company"> -->
+	<!-- <input type="text" class="form-control" placeholder="location"> -->
+
+	
+</div>
+</select>
+</select>
+</div>
+</form>
+
+</div>
+
+<!-- our partners section -->
+<section id="recruiters">
+	<div class="container text-center">
+		<h3>AirLines</h3>
+		<div>
+			<img src="{{url_for('static', filename='images/airindia.png')}}">
+			<img src="{{url_for('static', filename='images/SpiceJet.png')}}">
+			<img src="{{url_for('static', filename='images/airasia.png')}}">
+			<img src="{{url_for('static', filename='images/goair.png')}}">
+			<img src="{{url_for('static', filename='images/vistara.png')}}">
+		</div>
+	</div>
+</section>
+</body>
+</html>
