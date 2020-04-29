@@ -16,7 +16,6 @@ Django==3.0.4
 django-heroku==0.3.1
 dnspython==1.16.0
 docopt==0.6.2
-docutils-python3==0.13
 ensemble==0.0.dev1
 Flask==1.1.2
 Flask-RESTful==0.3.8
